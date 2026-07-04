@@ -27,7 +27,7 @@ class Settings(BaseSettings):
 
     openai_api_key: str = Field(default="", validation_alias="OPENAI_API_KEY")
     openai_base_url: str = Field(default="https://aicredits.in/v1", validation_alias="OPENAI_BASE_URL")
-    chat_model: str = Field(default="gpt-4o-mini", validation_alias="CHAT_MODEL")
+    chat_model: str = Field(default="anthropic/claude-sonnet-4.5", validation_alias="CHAT_MODEL")
     embedding_model: str = Field(default="text-embedding-3-small", validation_alias="EMBEDDING_MODEL")
 
     max_upload_size_mb: int = 50
