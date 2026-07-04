@@ -1,0 +1,16 @@
+node_modules/
+dist/
+.env
+.DS_Store
+*.log
+__pycache__/
+.pytest_cache/
+.venv/
+*.tsbuildinfo
+frontend/vite.config.js
+frontend/vite.config.d.ts
+backend/*.db
+backend/uploads/*
+!backend/uploads/.gitkeep
+backend/vector_store/*
+!backend/vector_store/.gitkeep
