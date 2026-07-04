@@ -23,7 +23,7 @@ class Settings(BaseSettings):
     upload_dir: Path = Path("uploads")
     faiss_index_path: Path = Path("vector_store/faiss.index")
     faiss_metadata_path: Path = Path("vector_store/faiss_metadata.json")
-    frontend_origin: str = "http://localhost:5173,http://127.0.0.1:5173"
+    frontend_origin: str = "http://localhost:5173,http://127.0.0.1:5173 ,https://medi-query-silk.vercel.app/ "
 
     openai_api_key: str = Field(default="", validation_alias="OPENAI_API_KEY")
     openai_base_url: str = Field(default="https://aicredits.in/v1", validation_alias="OPENAI_BASE_URL")
